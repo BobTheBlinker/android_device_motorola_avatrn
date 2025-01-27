@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=msi
+DEVICE=avatrn
 VENDOR=motorola
 
 # Load extract_utils and do some sanity checks
