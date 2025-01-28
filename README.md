@@ -1,4 +1,4 @@
-# Android device tree for motorola motorola edge 2024 (msi)
+# Android device tree for motorola motorola edge 2024 (avatrn)
 
 ```
 #
