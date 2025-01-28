@@ -38,6 +38,11 @@ TARGET_NO_BOOTLOADER := true
 # Display
 TARGET_SCREEN_DENSITY := 400
 
+# HIDL
+ODM_MANIFEST_SKUS += dn n
+ODM_MANIFEST_DN_FILES := vendor/motorola/avatrn/proprietary/odm/etc/vintf/manifest_dn.xml
+ODM_MANIFEST_N_FILES := vendor/motorola/avatrn/proprietary/odm/etc/vintf/manifest_n.xml
+
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x00000000
@@ -113,6 +118,7 @@ BOARD_AVB_VENDOR_BOOT_ROLLBACK_INDEX_LOCATION := 1
 
 # VINTF
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+
 
 # Inherit the proprietary files
 include vendor/motorola/avatrn/BoardConfigVendor.mk
